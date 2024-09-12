@@ -181,16 +181,15 @@ class _DisplayInstallmentsState extends State<DisplayInstallments> {
                       child: Text("Not Data Available"),
                     );
                   }
-                  // Future.delayed(const Duration(seconds: 5));
                   return isLoading
                       ? Center(child: CircularProgressIndicator())
                       : list.isNotEmpty
                           ? 
-                          // ListView.builder(
-                          //     shrinkWrap: true,
-                          //     itemCount: snapshot.data!.length,
-                          //     itemBuilder: (context, index) {
-                          //       return 
+                          ListView.builder(
+                              shrinkWrap: true,
+                              itemCount: snapshot.data!.length,
+                              itemBuilder: (context, index) {
+                                return 
                                 Table(
                                   border: TableBorder.all(
                                       width: 1.7, color: Colors.green),
@@ -218,8 +217,8 @@ class _DisplayInstallmentsState extends State<DisplayInstallments> {
                                         ),
                                       ],
                                     ),
-                                    ...List.generate(list.length, (index) {
-                                      return TableRow(children: [
+                                    //...List.generate(list.length, (index) {
+                                       TableRow(children: [
                                         TableCell(
                                           child: Text(
                                             snapshot.data![index]['installment']
@@ -242,11 +241,11 @@ class _DisplayInstallmentsState extends State<DisplayInstallments> {
                                             style: titleTable,
                                           ),
                                         ),
-                                      ]);
-                                    }),
+                                      ]),
+                                   // }),
                                   ],
-                                )
-                             // })
+                                );
+                              })
                           : Container(
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,

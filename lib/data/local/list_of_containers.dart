@@ -1,4 +1,3 @@
-import 'package:expense_management/core/classes/service.dart';
 import 'package:expense_management/core/constant/style.dart';
 import 'package:expense_management/data/local/custom_containers.dart';
 import 'package:flutter/material.dart';
@@ -75,8 +74,8 @@ List<Widget> containersHome = [
 ];
 
 List<Widget> containersBalance = [
-  CustomContainer("مصروفاتك الاساسيه الثابته", 0.5,
-      Services.getData(key: 'monthlySalary'), [
+  CustomContainer("مصروفاتك الاساسيه الثابته", 0.50,
+      [
     Row(
       children: [
         Expanded(
@@ -126,8 +125,8 @@ List<Widget> containersBalance = [
       ],
     ),
   ]),
-  CustomContainer('المصروفات الشخصيه المتغيره', 0.3,
-      Services.getData(key: 'monthlySalary'), [
+  CustomContainer('المصروفات الشخصيه المتغيره', 0.30,
+      [
     Row(
       children: [
         Image.asset('assets/images/l4.png', height: 20, width: 20),
@@ -170,7 +169,7 @@ List<Widget> containersBalance = [
     ),
   ]),
   CustomContainer(
-      'الادخارات والاستثمارات', 0.2, Services.getData(key: 'monthlySalary'), [
+      'الادخارات والاستثمارات', 0.20,[
     Row(
       children: [
         Image.asset('assets/images/l9.png', height: 20, width: 20),

@@ -1,16 +1,32 @@
-# expense_management
+# expense management
 
-A new Flutter project.
+**packages we are using:**
 
-## Getting Started
+- shared preferences
+- sqflite 
+- path Provider 
+- intl
+- Flutter_localization 
+- Percent_indicator 
+- responsive
 
-This project is a starting point for a Flutter application.
+## Usage
 
-A few resources to get you started if this is your first Flutter project:
+expense management application that allows a person to control their money in a simple way. Because this application organizes their money based on monthly salary in any way. In addition, this application has features like notes that are used as a reference or alert at the right time to do something.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### ScreenShots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![App UI](/ap/convert.png)
+![App UI](/ap/convert1.png)
+![App UI](/ap/display.png)
+![App UI](/ap/display1.png)
+![App UI](/ap/edit.png)
+![App UI](/ap/home.png)
+![App UI](/ap/login.png)
+![App UI](/ap/login1.png.png)
+![App UI](/ap/profile.png)
+![App UI](/ap/edit.png)
+![App UI](/ap/table.png)
+![App UI](/ap/table1.png)
+
+
