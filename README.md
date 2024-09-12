@@ -4,7 +4,8 @@
 
 - shared preferences
 - sqflite 
-- path Provider 
+- path Provider
+- animated splash screen
 - intl
 - Flutter_localization 
 - Percent_indicator 
